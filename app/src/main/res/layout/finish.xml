@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="391dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="100dp"
+        android:baselineAligned="false"
+        android:paddingLeft="20dp"
+        android:text="You are finished with this test!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/headingColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="115dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/toolBarBackground"
+        android:onClick="buttonOnClick4"
+        android:text="Back"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</android.support.constraint.ConstraintLayout>

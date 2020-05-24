@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TravFever</string>
+    <string name="dateText">Date</string>
+    <string name="welcome_text">Welcome Back!</string>
+    <string name="weather_button">Current Weather</string>
+    <string name="Celsius_Symbol">°C</string>
+    <string name="Degree">%d</string>
+    <string name="Day_Date">Thursday, 20th June</string>
+    <string name="Humidity_Label">Humidity:</string>
+    <string name="Wind_Label">Wind:</string>
+    <string name="Rain_Label">Description</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_button">Map</string>
+    <string name="mapiconbutton">mapIconButton</string>
+    <string name="weathericonbutton">weatherIconButton</string>
+</resources>

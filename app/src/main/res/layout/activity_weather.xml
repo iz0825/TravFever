@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".WeatherActivity">
+
+    <TextView
+        android:id="@+id/HumidDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="%d"
+        android:textColor="@color/buttonBackground"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeatherPhoto" />
+
+    <TextView
+        android:id="@+id/WindDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="%d"
+        android:textColor="@color/buttonBackground"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HumidLabel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:text="@string/Celsius_Symbol"
+        android:textColor="@color/buttonBackground"
+        android:textSize="60sp"
+        app:layout_constraintStart_toEndOf="@+id/TempDeg"
+        app:layout_constraintTop_toBottomOf="@+id/Date" />
+
+    <TextView
+        android:id="@+id/TempDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="141dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="460dp"
+        android:text="@string/Degree"
+        android:textColor="@color/buttonBackground"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Day_Date"
+        android:textColor="@color/buttonBackground"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/TempDeg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/WeatherPhoto"
+        android:layout_width="158dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="TODO"
+        android:scaleType="center"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TempDeg"
+        app:srcCompat="@drawable/sunnycolor"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/HumidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Humidity_Label"
+        android:textColor="@color/buttonBackground"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeatherPhoto" />
+
+    <TextView
+        android:id="@+id/WindLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Wind_Label"
+        android:textColor="@color/buttonBackground"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HumidLabel" />
+
+    <TextView
+        android:id="@+id/Descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Rain_Label"
+        android:textColor="@color/buttonBackground"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WindLabel" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/weather_toolbar"
+        android:layout_width="413dp"
+        android:layout_height="62dp"
+        android:background="@color/toolBarBackground"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
